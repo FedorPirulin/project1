@@ -1,0 +1,116 @@
+@import "../media.scss";
+
+.portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.portfolio__item {
+    position: relative;
+    width: 33.333333%;
+    // overflow: hidden;
+    color: #fff;
+    &:hover {
+        transition: all .5s cubic-bezier(.23,1,.32,1);
+        .portfolio__menu {
+            opacity: 1;
+        }
+        .portfolio__img {
+            opacity: 0;
+        }
+        .portfolio__video {
+            opacity: 1;
+        }
+        &:after {
+            transition: all .4s cubic-bezier(.215,.61,.355,1);
+            background: rgba(#000, 0);
+        }
+    }
+    &::after {
+        content: "";
+        position: relative;
+        display: block;
+        padding-top: 100%;
+        background: #191a1b;
+        opacity: .5;
+        transition: opacity .4s ease-out;
+        z-index: 3;
+    }
+    @include phones {
+        width: 100%;
+    }
+}
+.portfolio__video {
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.portfolio__link {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    padding: 35px 30px;
+}
+.portfolio__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    transition: transform 1s cubic-bezier(.23,1,.32,1);
+    z-index: 2;
+}
+
+.portfolio__menu {
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    top: 8%;
+    left: 4%;
+    z-index: 5;
+    transition: opacity .2s ease-out;
+    @include tablets {
+        display: none;
+    }
+}
+.portfolio__menu-item {
+    color: rgba(#fff, 0.4);
+    font-weight: 800;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-bottom: 13px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.portfolio__capture {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Montserrat;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    @include desktop {
+        font-size: 25px;
+    }
+    @include phones {
+        font-size: 18px;
+    }
+}

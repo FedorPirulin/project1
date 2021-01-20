@@ -1,0 +1,76 @@
+.bitch-sidebar {
+    float: right;
+    width: 73%;
+
+    background-color: #FFFFFF;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 32% 32% 32%;
+    grid-auto-rows: 12% 20% 20% 20% 20%;
+    grid-gap: 2% 2%;
+    grid-auto-flow: row;
+}
+
+.bitch-sidebar {
+    width: 73%;
+    height: 100%;
+    padding: 2.8% 3.5% 5%;
+    background-color: #FFFFFF;
+    display: inline-grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 12% 20% 20% 20% 20%;
+    grid-auto-columns: 32% 32% 32%;
+    grid-auto-rows: 12% 20% 20% 20% 20%;
+    grid-gap: 2% 2%;
+    grid-auto-flow: row;
+}
+.bitch-sidebar > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bitch-sidebar__header {
+    padding-top: 1vw;
+
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 78px;
+    letter-spacing: 0em;
+    text-align: left;
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.left_foto1 {
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+.left_foto2 {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.right_foto1 {
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.right_foto2 {
+    background: url("../../img/bitch__sidebar/bitch_block2_2.png");
+    background-size: cover;
+    grid-area: 3 / 2 / 5 / 3;
+}
+
+.right_foto3 {
+    grid-area: 5 / 3 / 5 / 4;
+}
+
+.bot_foto1 {
+    grid-area: 5 / 1 / 6 / 3;
+}
+
+.bot_foto2 {
+    grid-area: 5 / 3 / 6 / 4;
+}

@@ -1,0 +1,39 @@
+@import "../media.scss";
+
+.breadcrumbs__link {
+    color: #606060;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: Montserrat;
+    display: flex;
+
+}
+.breadcrumbs__item {
+    position: relative;
+    margin-right: 30px;
+    &:after {
+        position: absolute;
+        left: 115%;
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+       background: #606060;
+       height: 1px;
+       width: 12px;
+    }
+    &:last-child {
+        margin-right: 0;
+        &:after {
+            display: none;
+        }
+    }
+    
+}
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    @include tablets {
+        display: none;
+    }
+}

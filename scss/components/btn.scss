@@ -1,0 +1,41 @@
+@import "../media.scss";
+
+.btn {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Montserrat;
+    color: #fff;
+    border-radius: 4px;
+    border: transparent;
+    cursor: pointer;
+    &--desktop {
+        @include tablets {
+            display: none;
+        }
+    }
+    &--orange {
+        background: #FF562F;
+        box-shadow: 0px 4px 44px rgba(255, 33, 3, 0.2);
+        padding: 10px 26px;
+        margin-right: 25px;
+    }
+    &--orange:hover {
+        box-shadow: 0px 4px 44px rgba(255, 33, 3, 0.5);
+    }
+    &--white {
+        background: #fff;
+        color: #000;
+        padding: 20px 40px;
+    }
+    &--width {
+        width: 100%;
+    }
+    &--phone {
+        display: none;
+        @include phones {
+            display: block;
+            max-width: 186px;
+            margin: 0 auto;
+        }
+    }
+}

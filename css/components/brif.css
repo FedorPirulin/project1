@@ -1,0 +1,290 @@
+.brief__form {
+    display: flex;
+    flex-direction: column;
+}
+.brief__headline--title {
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.brief__container, .brief__header {
+    width: 66.7vw;
+    margin: 0 auto;
+
+}
+.brief__container > .brief__row {
+    justify-content: center;
+}
+
+.brief__header > .headline {
+    padding: 0;
+}
+
+@media screen and (max-width: 769px) {
+    .brief__container,.brief__header {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.burger--brief {
+    border: none;
+}
+
+.brief__title {
+    color: #434A56;
+    font-weight: 700;
+    line-height: 52.78px;
+    font-size: 38px;
+    text-align: left;
+    padding-bottom: 56px;
+}
+
+@media screen and (max-width: 769px) {
+    .brief__title {
+        padding-bottom: 34px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .brief__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+.brief__btns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 65px;
+}
+
+@media screen and (max-width: 481px) {
+    .brief__btns {
+        width: 100%;
+    }
+}
+
+.brief__btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #2E313D;
+    touch-action: manipulation;
+    font-size: 18px;
+    line-height: 25px;
+    margin-right: 1vw;
+    margin-bottom: 20px;
+    padding: 12px 26px;
+    border: transparent;
+    background: linear-gradient(135.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), linear-gradient(0deg, #EAECF0, #EAECF0), #F0F1F4;
+    background-blend-mode: soft-light, normal, normal;
+    box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
+    border-radius: 27px;
+}
+
+.brief__btn--service {
+    position: relative;
+    box-sizing: border-box;
+    width: 164px;
+    height: 190px;
+    margin-right: 51px;
+    margin-bottom: 51px;
+    padding-top: 125px;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
+    border-radius: 6px;
+  
+}
+
+@media screen and (max-width: 481px) {
+    .brief__btn--service {
+        margin: 0 auto 51px;
+    }
+
+    .brief__btn--service:nth-child(5) {
+        margin: 0 auto;
+    }
+}
+
+
+/* .brief__btn--service img {
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+.brief__btn--service:nth-child(1) {
+    background: #EAECF0 url(../../img/uxnoodle.jpg) 0 0 no-repeat;
+    background-size: contain;
+    
+}
+.brief__btn--service:nth-child(2) {
+    background: #EAECF0 url(../../img/yourmoney.jpg) 0 0 no-repeat;
+    background-size: contain;
+    
+}
+.brief__btn--service:nth-child(3) {
+    background: #EAECF0 url(../../img/ide.jpg) 0 0 no-repeat;
+    background-size: contain;
+    
+}
+.brief__btn--service:nth-child(4) {
+    background: #EAECF0 url(../../img/phone.jpg) 0 0 no-repeat;
+    background-size: contain;
+    
+}
+.brief__btn--service:nth-child(5) {
+    background: #EAECF0 url(../../img/smm.jpg) 0 0 no-repeat;
+    background-size: contain;
+    
+    margin-right: 0;
+}
+
+.brief__btn--service-active {
+    color: #999BA3;
+    background-blend-mode: soft-light, normal, normal;
+    box-shadow: inset -5px -5px 8px rgba(250, 251, 255, 0.73), inset 5px 5px 10px rgba(166, 171, 189, 0.45);
+}
+
+@media screen and (max-width: 481px) {
+    .brief__btn {
+        /* margin-right: 10px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 20px; */
+        width: 100%;
+    }
+}
+
+
+/* @media screen and (max-width: 769px) {
+    .brief__btn {
+        margin-right: 10px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .brief__btn {
+        font-size: 17px;
+        line-height: 30px;
+        margin-bottom: 14px;
+    }
+} */
+
+/* @media (max-width: 1199px) and (min-width: 1025px) {
+    .brief__btn {
+        font-size: 13.6px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 1399px) and (min-width: 1200px) {
+    .brief__btn {
+        font-size: 15.3px;
+        line-height: 27px;
+        margin-bottom: 18px;
+    }
+} */
+
+.brief__btn--active {
+    color: #999BA3;
+    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), linear-gradient(0deg, #EBECF0, #EBECF0), #F0F1F4;
+    background-blend-mode: soft-light, normal, normal;
+    box-shadow: inset -5px -5px 8px rgba(250, 251, 255, 0.73), inset 5px 5px 10px rgba(166, 171, 189, 0.45);
+}
+
+.brief__btn:hover {
+    color: #999BA3;
+    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), linear-gradient(0deg, #EBECF0, #EBECF0), #F0F1F4;
+    background-blend-mode: soft-light, normal, normal;
+    box-shadow: inset -5px -5px 8px rgba(250, 251, 255, 0.73), inset 5px 5px 10px rgba(166, 171, 189, 0.45);
+}
+
+.brief__headline--paragraph {
+    max-width: 480px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 55px;
+}
+
+.brief__header {
+    margin-bottom: 15px;
+}
+.brief__wrapper {
+    width: 100%;
+    background-color: #EEEFF3;
+    padding: 47px 0 140px;
+}
+.brief__inputs {
+    width: 100%;
+}
+
+@media screen and (max-width: 1025px) {
+    .brief__inputs {
+        width: 100%;
+    }
+}
+
+.brief__input {
+    width: 100%;
+    background: transparent;
+    border:none;
+    border-bottom: 1px solid #C2C5D1;
+    padding-bottom: 16px;
+    outline: transparent;
+    color:#A4A4A4;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 68px;
+}
+
+@media screen and (max-width: 481px) {
+    .brief__input {
+        padding: 20px;
+        font-size: 16px;
+    }
+}
+
+.brief__input--margin-bottom {
+    margin-bottom: 17px;
+}
+.brief__input--margin--right {
+    margin-right: 36px;
+}
+@media screen and (max-width: 481px) {
+    .brief__input--margin--right {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+.brief__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brief__end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width: 481px) {
+    .brief__row {
+        flex-direction: column;
+        justify-content: left;
+    }
+}

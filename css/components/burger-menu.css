@@ -1,0 +1,123 @@
+.burger-menu {
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 17% 100%);
+  display: flex;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -100vw;
+  z-index: 100;
+  background: #13171A;
+  height: 100vh;
+  width: 70%;
+}
+@media screen and (max-width: 769px) {
+  .burger-menu {
+    width: 100vw;
+    right: -100vw;
+    clip-path: none;
+  }
+}
+.burger-menu.active {
+  right: 0;
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.burger-menu__container {
+  width: 100%;
+  padding: 45px 70px 50px 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 769px) {
+  .burger-menu__container {
+    padding: 20px;
+    justify-content: flex-start;
+  }
+}
+
+.burger-menu__header,
+.burger-menu__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 769px) {
+  .burger-menu__header {
+    margin-bottom: 80px;
+  }
+}
+
+.burger-menu__logo {
+  display: none;
+  margin-right: auto;
+}
+@media screen and (max-width: 769px) {
+  .burger-menu__logo {
+    display: block;
+  }
+}
+
+.burger-menu__col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 769px) {
+  .burger-menu__col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+  }
+}
+
+.burger-menu__contacts {
+  display: none;
+  margin-bottom: 20px;
+  width: 100%;
+}
+@media screen and (max-width: 769px) {
+  .burger-menu__contacts {
+    display: flex;
+    margin-top: auto;
+  }
+}
+
+.burger-menu__contact {
+  padding: 20px 15px;
+  border: 1px solid #3D3D3D;
+  width: 50%;
+  margin-bottom: 0;
+  margin-right: 0;
+  text-align: center;
+}
+
+.burger-menu__btn {
+  display: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: Montserrat;
+  font-size: 15px;
+  margin: 0 auto;
+  width: 50%;
+}
+@media screen and (max-width: 769px) {
+  .burger-menu__btn {
+    display: block;
+    text-align: center;
+  }
+}
+
+.burger-menu__socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 769px) {
+  .burger-menu__socials {
+    width: 100%;
+  }
+}

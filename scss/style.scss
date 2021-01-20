@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap');
+
+
+@import "./components/btn.scss";
+@import "./components/header.scss";
+@import "./components/burger.scss";
+@import "./components/hero.scss";
+@import "./components/socials.scss";
+@import "./components/contacts.scss";
+@import "./components/portfolio.scss";
+@import "./components/form.scss";
+@import "./components/footer.scss";
+@import "./components/burger-menu.scss";
+@import "./components/menu.scss";
+@import "./components/breadcrumbs.scss";
+@import "./components/services.scss";
+@import "./components/background-video.scss";
+
+@import "./media.scss";
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+div {
+margin: 0;
+padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+    font-size: 16px;
+    background: #13171A;
+    font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.2;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    &.overflow {
+        overflow: hidden;
+    }
+    &.overlay:before {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, .7);
+        z-index: 100;
+    }
+    @include phones {
+    font-size: 4vmin;
+    }
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+button {
+    outline: transparent;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+video {
+    display: inline-block;
+}
+.headline {
+    padding: 0 45px;
+}
+.headline__title {
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 50px;
+    @include tablets {
+        font-size: 40px;
+    }
+}

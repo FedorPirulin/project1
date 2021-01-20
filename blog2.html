@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#ff562f">
+    <meta name="theme-color" content="#ffffff">
+    <title>AxLab</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/components/blog.css">
+    <link rel="stylesheet" href="css/components/dots.css">
+</head>
+<body>
+<div id="popup_form" class="popup_form">
+    <div class="popup_form_content">
+        <div class="burger-menu__container">
+            <div class="burger-menu__header">
+                <a href="index.html" class="logo burger-menu__logo">
+                    <img class="logo__img" src="./img/logo-menu.png" alt="AxLab">
+                </a>
+                <a href="#" class="popup_form_close">
+                    <img src="img/close-button.svg" width="18" height="18">
+                </a>
+            </div>
+            <div class="burger-menu__col">
+                <form class="form">
+                    <div class="form__title">
+                        Передайте
+                        свои
+                        проблемы
+                        в наши руки
+                    </div>
+                    <div class="brief__inputs">
+                        <div class="brief__row">
+                            <input type="text" class="brief__input brief__input--margin--right" placeholder="Имя" required>
+                            <input type="text" class="brief__input" placeholder="Телефон" required>
+                        </div>
+                        <div class="brief__row">
+                            <input type="text" class="brief__input" placeholder="Почта" required>
+                        </div>
+                        <div class="brief__row">
+                            <button class="btn btn--white btn--width" type="submit">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="burger-menu__contacts">
+                    <a class="contacts__tel burger-menu__contact" href="tel:+79006566903">
+                        +7 900 656 69 03
+                    </a>
+                    <a class="contacts__mail burger-menu__contact" href="mailto:info@axlab.ru">
+                        info@axlab.ru
+                    </a>
+                </div>
+                <div class="burger-menu__socials">
+                    <ul class="socials-icon socials-icon--phone">
+                        <li class="socials-icon__item">
+                            <a href="#" class="socials-icon__link">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </li>
+                        <li class="socials-icon__item">
+                            <a href="https://www.instagram.com/axlab.ru/" class="socials-icon__link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="socials-icon__item">
+                            <a href="#" class="socials-icon__link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="burger-menu__btn">Меню</a>
+                </div>
+            </div>
+            <div class="burger-menu__footer">
+                <ul class="socials">
+                    <li class="social">
+                        <a data-hover="Behance" class="social__link" href="#">
+                            <div>Behance</div>
+                        </a>
+                    </li>
+                    <li class="social">
+                        <a data-hover="Youtube" class="social__link" href="#">
+                            <div>Youtube</div>
+                        </a>
+                    </li>
+                    <li class="social">
+                        <a data-hover="Instagram" class="social__link" href="https://www.instagram.com/axlab.ru/">
+                            <div>Instagram</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button id="popup_form_btn" class="logo-mini logo_fixed">
+    <img src="./img/logo-mini.png" alt="Logo">
+</button>
+
+
+<div class="wrapper wrapper__bg wrapper__gowithus">
+    <header class="header">
+        <div class="header__container header__container--fixed">
+            <a href="index.html" class="logo">
+                <img class="logo__img" src="./img/logo.png" alt="AxLab">
+            </a>
+            <a href="index.html" class="logo logo--phone">
+                <img class="logo__img" src="./img/logo-menu.png" alt="AxLab">
+            </a>
+            <div class="header__col">
+                <a href="./brief.html"  class="btn btn--orange btn--desktop">Оформить бриф</a>
+                <a class="burger" href="#"><span></span></a>
+            </div>
+            <div class="burger-menu">
+                <div class="burger-menu__container">
+                    <div class="burger-menu__header">
+                        <a href="index.html" class="logo burger-menu__logo">
+                            <img class="logo__img" src="./img/logo-menu.png" alt="AxLab">
+                        </a>
+                    </div>
+                    <div class="burger-menu__col">
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a href="services.html" class="menu__link"><span>Услуги</span></a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link"><span>Проекты</span></a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="production.html" class="menu__link"><span>Production</span></a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="blog.html" class="menu__link"><span>Блог</span></a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link"><span>Контакты</span></a>
+                            </li>
+                        </ul>
+                        <form class="form form--phone">
+                            <div class="form__title">
+                                Передайте
+                                свои
+                                проблемы
+                                в наши руки
+                            </div>
+                            <div class="form__inputs">
+                                <div class="form__row">
+                                    <input type="text" class="form__input form__input--margin--right" placeholder="Имя" required>
+                                    <input type="text" class="form__input" placeholder="Телефон" required>
+                                </div>
+                                <div class="form__row">
+                                    <input type="text" class="form__input" placeholder="Почта" required>
+                                </div>
+                                <div class="form__row">
+                                    <button class="btn btn--white btn--width" type="submit">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="burger-menu__contacts">
+                            <a class="contacts__tel burger-menu__contact" href="tel:+79006566903">+7 900 656 69 03</a>
+                            <a class="contacts__mail burger-menu__contact" href="mailto:info@axlab.ru">info@axlab.ru</a>
+                        </div>
+                        <div class="burger-menu__socials">
+                            <ul class="socials-icon socials-icon--phone">
+                                <li class="socials-icon__item">
+                                    <a href="#" class="socials-icon__link">
+                                        <i class="fab fa-vk"></i>
+                                    </a>
+                                </li>
+                                <li class="socials-icon__item">
+                                    <a href="#" class="socials-icon__link">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="socials-icon__item">
+                                    <a href="#" class="socials-icon__link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="burger-menu__btn">Заявка</a>
+                        </div>
+                    </div>
+                    <div class="burger-menu__footer">
+                        <ul class="socials">
+                            <li class="social">
+                                <a data-hover="Behance" class="social__link" href="#">
+                                    <div>Behance</div>
+                                </a>
+                            </li>
+                            <li class="social">
+                                <a data-hover="Youtube" class="social__link" href="#">
+                                    <div>Youtube</div>
+                                </a>
+                            </li>
+                            <li class="social">
+                                <a data-hover="Instagram" class="social__link" href="#">
+                                    <div>Instagram</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="headline">    
+        <h2 class="headline__title">Блог</h2>
+    </div>
+</div>
+
+    <main class="blog__wrapper">
+        <!-- Секция "меню блога" -->
+        <section class="blog blog-menu">
+            <h2 class="blog-menu__title"><a class="blog-menu__title" href="./blog.html">Все статьи</a></h2>
+            <ul class="blog-menu__list">
+                <li class="blog-menu__item blog-menu__item--active"><a href="#" class="blog-menu__link blog-menu__link--active">UX-дизайн</a></li>
+                <li class="blog-menu__item"><a href="#" class="blog-menu__link"></a>UX-дизайн</a></li>
+                <li class="blog-menu__item"><a href="#" class="blog-menu__link"></a>Анимация интерфейсов</a></li>
+                <li class="blog-menu__item"><a href="#" class="blog-menu__link"></a>Брендинг</a></li>
+                <li class="blog-menu__item"><a href="#" class="blog-menu__link"></a>Основы дизайна</a></li>
+                <li class="blog-menu__item"><a href="#" class="blog-menu__link"></a>Аналитика</a></li>
+                <li class="blog-menu__item"><a href="#" class="blog-menu__link"></a>Маркетинг</a></li>
+            </ul>
+        </section>
+        <!-- Секция "Блог-хедер" -->
+        <section class="blog-header blog-header--bg">
+            <h2 class="blog-header__title">Инструменты для создания UX/UI прототипов: Адаптивные лейауты</h2>
+            <p class="blog-header__paragraph">Свежий подход к созданию<br> адаптивного дизайна.</p>
+        </section>
+        <!-- Точки -->
+        <div class="dots">
+            <ul class="dots__list">
+                <li class="dots__item"></li>
+                <li class="dots__item"></li>
+                <li class="dots__item"></li>
+            </ul>
+        </div>
+        <!-- Секция "Статья" -->
+        <section class="blog-article">
+            <p class="blog-article__paragraph">Сегодня у дизайнеров программных продуктов есть более чем достаточно инструментов для проектирования прекрасного софта и глубоких взаимодействий. Тем не менее, я считаю, что инструменты дизайна пока находятся на стадии младенчества, и у меня есть несколько идей, в какую сторону они должны “взрослеть” и развиваться, чтобы эффективнее помогать нам создавать цифровой опыт взаимодействия.</p>
+            <p class="blog-article__paragraph">Интересуетесь свежими статьями по дизайну? Вступайте в группу на Facebook.</p>
+            <p class="blog-article__paragraph">Надеюсь, что эти идеи (если они действительно стоящие) лягут в основу наших будущих инструментов дизайна. Мне бы хотелось, чтобы мои задумки использовали, улучшали и применяли в проектировании продуктов, при помощи которых мы, дизайнеры, сможем создавать более удобный софт.</p>
+            <p class="blog-article__paragraph">В этой статье я рассмотрю возможные способы улучшения одного из фундаментальных аспектов дизайнерских инструментов: а именно лейаутов.</p>
+            <p class="blog-article__paragraph">Мы живем в динамичном мире, а программы, которые мы проектируем, “живут” на постоянно изменяющихся и развивающихся устройствах. У этих устройств разные размеры экранов, разная плотность пикселей и разные ориентации. Наш пользовательский опыт тоже существует в этой среде и адаптируется к постоянно изменяющимся условиям. Отсюда рождается один важный принцип:</p>
+            <p class="blog-article__paragraph">Инструменты дизайна должны обладать теми же свойствами, какими обладает среда, под которую мы проектируем.</p>
+            <img src="./img/drugs.jpg" alt="Drugs" class="blog-article__img">
+            <p class="blog-article__paragraph">Современные инструменты далеки от этого. В основе Photoshop — один растровый документ фиксированного размера: формат, заточенный под те времена, когда дизайны в основном существовали в печатном виде. В Sketch с его веркторными артбордами положение вещей немного лучше: можно проектировать под несколько типов устройств и размеров экранов в рамках страницы при помощи нескольких артбордов. Тем не менее, каждый артборд — это по-прежнему одна область с фиксированным размером. Более того, у объектов в этих инструментах тоже фиксированные размеры и местоположение. Текстовые поля, картинки, кнопки: все статично. Из-за того, что инструменты статичны, мы начинаем мыслить и проектировать под какой-то определенный размер экрана, не задумаваясь о том, как продукт будет адаптироваться к различным условиям. Короче говоря, у нас неправильный фундамент.</p>
+        </section>
+        <!-- Точки -->
+        <div class="dots">
+            <ul class="dots__list">
+                <li class="dots__item"></li>
+                <li class="dots__item"></li>
+                <li class="dots__item"></li>
+            </ul>
+        </div>
+        <!-- Секция "Другие статьи" -->
+        <section class="blog-more">
+            <h2 class="blog-more__title">Другие статьи</h2>
+            <ul class="blog-more__list">
+                <li class="blog-more__item">
+                    <a href="#" class="blog-more__link">
+                        <div class="blog-more__img--wrapper">
+                            <img src="./img/girlinblack.jpg" alt="Girl" class="blog-more__img">
+                        </div>   
+                        <p class="blog-more__paragraph">Обзор 7 лучших курсов коммерческой иллюстрации: с нуля, онлайн и бесплатные</p>
+                    </a>
+                </li>
+                <li class="blog-more__item">
+                    <a href="#" class="blog-more__link">
+                        <div class="blog-more__img--wrapper">
+                            <img src="./img/drinking.jpg" alt="Drinking" class="blog-more__img">
+                        </div> 
+                        <p class="blog-more__paragraph">Обзор 7 лучших курсов коммерческой иллюстрации: с нуля, онлайн и бесплатные</p>
+                    </a>
+                </li>
+                <li class="blog-more__item">
+                    <a href="#" class="blog-more__link">
+                        <div class="blog-more__img--wrapper">
+                            <img src="./img/couple.jpg" alt="Couple" class="blog-more__img">
+                        </div> 
+                        <p class="blog-more__paragraph">Обзор 7 лучших курсов коммерческой иллюстрации: с нуля, онлайн и бесплатные</p>
+                    </a>
+                </li>
+            </ul>
+        </section>  
+
+    </main>
+
+    <footer class="footer" id="form">
+        <div class="container footer__container">
+            <form class="form form--hide">
+                <div class="form__inputs">
+                    <div class="form__row">
+                        <input type="text" class="form__input form__input--margin--right" placeholder="Имя" required>
+                        <input type="text" class="form__input" placeholder="Телефон" required>
+                    </div>
+                    <div class="form__row">
+                        <input type="text" class="form__input" placeholder="Почта" required>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__add"> 
+                            <img class="form__icon" src="./img/pen.png" alt="">
+                            <a data-hover="прикрепить файл" class="contacts__add" href="#" style="margin: -5px 0;">
+                                <div>прикрепить файл</div>  
+                            </a>
+                            <input class="form__file" type="file">
+                        </label>
+                        <button class="btn btn--orange btn--round" type="submit">Отправить</button>
+                    </div>
+                </div>
+            </form>
+            <div class="footer__btn">
+                <div class="form__title form__title--phone">
+                    Передайте
+                    свои
+                    проблемы
+                    в наши руки
+                </div>
+                <a href="./brief.html" class="btn btn--orange btn--phone">Оформить бриф</a>
+            </div>
+            <div class="footer__contacts">
+                <div class="contacts">
+                       <a data-hover="+7 900 656 69 03" class="contacts__tel contacts_rotate_btn" href="tel:+79006566903">
+                        <div>+7 900 656 69 03</div>
+                    </a>
+                    <a data-hover="info@axlab.ru" class="contacts__mail contacts_rotate_btn" href="mailto:info@axlab.ru">
+                        <div>info@axlab.ru</div>
+                    </a>
+                </div>
+                <a href="index.html" class="logo">
+                    <img class="logo__img" src="./img/logo.png" alt="AxLab">
+                </a>
+                <a href="index.html" class="logo logo--phone">
+                    <img class="logo__img" src="./img/logo-menu.png" alt="AxLab">
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./js/jquery.fancybox.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

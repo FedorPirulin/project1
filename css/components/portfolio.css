@@ -1,0 +1,137 @@
+.portfolio {
+  margin-bottom: 135px;
+}
+@media screen and (max-width: 481px) {
+  .portfolio {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 481px) {
+  .portfolio__list {
+    flex-direction: column;
+  }
+}
+
+.portfolio__item {
+  position: relative;
+  width: 33.333333%;
+  color: #fff;
+}
+.portfolio__item:hover {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.portfolio__item:hover .portfolio__menu {
+  opacity: 1;
+}
+.portfolio__item:hover .portfolio__img {
+  opacity: 0;
+}
+.portfolio__item:hover .portfolio__video {
+  opacity: 1;
+}
+.portfolio__item:hover:after {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background: rgba(0, 0, 0, 0);
+}
+.portfolio__item::after {
+  content: "";
+  position: relative;
+  display: block;
+  padding-top: 100%;
+  background: #191a1b;
+  opacity: .5;
+  transition: opacity .4s ease-out;
+  z-index: 3;
+}
+@media screen and (max-width: 481px) {
+  .portfolio__item {
+    width: 100%;
+  }
+}
+
+.portfolio__video {
+  z-index: 1;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio__link {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  padding: 35px 30px;
+}
+
+.portfolio__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 2;
+}
+
+.portfolio__menu {
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  top: 8%;
+  left: 4%;
+  z-index: 5;
+  transition: opacity .2s ease-out;
+}
+@media screen and (max-width: 769px) {
+  .portfolio__menu {
+    display: none;
+  }
+}
+
+.portfolio__menu-item {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 800;
+  font-size: 14px;
+  margin-right: 20px;
+  margin-bottom: 13px;
+}
+.portfolio__menu-item:last-child {
+  margin-right: 0;
+}
+
+.portfolio__capture {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: Montserrat;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+@media screen and (max-width: 1025px) {
+  .portfolio__capture {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 481px) {
+  .portfolio__capture {
+    font-size: 18px;
+  }
+}
